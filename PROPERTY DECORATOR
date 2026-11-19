@@ -18,3 +18,6 @@ marie = Student("marie", 99)
 print(marie.grade)
 marie.grade = 98
 print(marie.grade)
+
+print("github test")
+print("hii OwO")
