@@ -1,0 +1,20 @@
+#liberal
+
+class Student:
+  def __init__(self, name, grade):
+    self.name = name
+    self.__grade = grade
+  @property
+  def grade(self):
+    return self.__grade
+  @grade.setter
+  def grade(self, grade):
+    if 0 <= grade <= 100:
+      self.__grade = grade
+    else:
+      print("no.")
+
+marie = Student("marie", 99)
+print(marie.grade)
+marie.grade = 98
+print(marie.grade)
